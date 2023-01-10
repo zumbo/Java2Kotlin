@@ -1,13 +1,13 @@
 class JavaCalledFromKotlin {
 
-    private String privateField;
+    private String field;
 
     String getField() {
-        return privateField;
+        return field;
     }
 
     void setField(String value) {
-        privateField = value;
+        field = value;
     }
 
     static String staticMethod() {

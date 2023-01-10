@@ -1,24 +1,27 @@
 class KotlinCalledFromJava {
 
 
-    private String privateField;
+    private String field;
 
     String getField() {
-        return privateField;
+        return field;
     }
 
     void setField(String value) {
-        privateField = value;
+        field = value;
     }
 
     static String staticMethod() {
         return "Hello from static method";
     }
 
-    private void callJava() {
+    void callJava() {
         var javaToCall = new JavaCalledFromKotlin();
         javaToCall.setField("Hallo Java");
-        var value = javaToCall.getField();
+        var valueFromField = javaToCall.getField();
+        System.out.println(valueFromField);
+        var valueFromStaticMethod = JavaCalledFromKotlin.staticMethod();
+        System.out.println(valueFromStaticMethod);
     }
 }
 
