@@ -1,0 +1,9 @@
+1. Konvertiere die Datei KotlinCalledFromJava mit IntelliJ-Unterstützung nach Kotlin.
+   (Rechtsklick auf Datei -> Convert Java File to Kotlin File)
+2. Es erscheint der Dialog "Some code in the rest of your project may require corrections ...".
+   Was passiert, wenn man ablehnt?
+   Hint: IntelliJ kann nicht von Kotlin zurück nach Java konvertieren, aber eine Konvertierung kann per Undo
+    rückgängig gemacht werden, und sonst hilft ein Rollback via git-Menu.
+3. Was bewirken die Annotationen im konvertierten Kotlin-Code? Was passiert, wenn man sie weglöscht?
+4. Kannst du den Java-Code manuell so anpassen, dass er Kotlin-Code ohne Annotationen aufrufen kann?
+5. Revertiere die Konvertierung. Was passiert, wenn man Main und KotlinCalledFromJava gleichzeitig konvertiert?
