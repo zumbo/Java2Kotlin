@@ -3,7 +3,7 @@ import java.util.List;
 
 class KotlinCalledFromJava {
 
-
+    public String publicField;
     private String field;
 
     String getField() {
@@ -31,9 +31,9 @@ class KotlinCalledFromJava {
         List<String> myArrayList = new ArrayList<>();
         List<String> myList = List.of("Hallo", "Welt");
         var lowercaseList = myList.stream().map(String::toLowerCase).toList();
-        
+
         lowercaseList.forEach(System.out::println);
-        
+
         lowercaseList.forEach(x -> System.out.println(">>" + x + "<<"));
     }
 
