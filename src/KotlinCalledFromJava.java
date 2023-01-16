@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class KotlinCalledFromJava {
 
 
@@ -23,6 +26,17 @@ class KotlinCalledFromJava {
         var valueFromStaticMethod = JavaCalledFromKotlin.staticMethod();
         System.out.println(valueFromStaticMethod);
     }
+
+    void javaStyleVsKotlinStyle() {
+        List<String> myArrayList = new ArrayList<>();
+        List<String> myList = List.of("Hallo", "Welt");
+        var lowercaseList = myList.stream().map(String::toLowerCase).toList();
+        
+        lowercaseList.forEach(System.out::println);
+        
+        lowercaseList.forEach(x -> System.out.println(">>" + x + "<<"));
+    }
+
 }
 
 

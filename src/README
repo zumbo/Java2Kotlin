@@ -3,7 +3,19 @@
 2. Es erscheint der Dialog "Some code in the rest of your project may require corrections ...".
    Was passiert, wenn man ablehnt?
    Hint: IntelliJ kann nicht von Kotlin zurück nach Java konvertieren, aber eine Konvertierung kann per Undo
-    rückgängig gemacht werden, und sonst hilft ein Rollback via git-Menu.
+   rückgängig gemacht werden, und sonst hilft ein Rollback via git-Menu.
 3. Was bewirken die Annotationen im konvertierten Kotlin-Code? Was passiert, wenn man sie weglöscht?
 4. Kannst du den Java-Code manuell so anpassen, dass er Kotlin-Code ohne Annotationen aufrufen kann?
 5. Revertiere die Konvertierung. Was passiert, wenn man Main und KotlinCalledFromJava gleichzeitig konvertiert?
+6. Schaue KotlinCalledFromJava.javaStyleVsKotlinStyle() an und vergleiche den Code vor und nach der Konvertierung nach
+   Kotlin. Abgesehen vom Syntax, welche Elemente des Java-Stils wurden beibehalten und was wurde geändert?
+   Kann man den Code noch kürzen und "kotlinhafter" machen?
+7. Was passiert, wenn man in myArrayList in Kotlin per add() ein Element hinzufügen möchte? Was muss man umschreiben,
+   damit es funktioniert? Hint: Was passiert, wenn mann das add() vor der Konvertierung, in Java hinzufügt?
+8. Kannst du alle Abhängigkeiten auf die Java-Standard-Bibliothek (java.util.*) aus KotlinCalledFromJava eliminieren?
+9. Schreibe eine Kotlin-Funktion, die einen non-null-Parameter entgegen nimmt und rufe sie aus Java auf. Was passiert?
+10. Schreibe eine Java-Funktion, die null zurückgibt, rufe sie aus Kotlin auf und weise sie einer als non-null
+    typisierten Variable zu. Was passiert? Was passiert, wenn die Kotlin-Variable implizit typisiert ist (var oder val)?
+    Kannst du den Java-Code so anpassen, dass Kotlin die Null-Safety wieder herstellt?
+
+
